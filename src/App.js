@@ -156,19 +156,9 @@ const App = () => {
                         subtitle={
                           <span>
                             by: {item.id}{" "}
-                            {
-									 
-									 item.categories && (
-                              categorises 
-											{
-													item.categories.map((category) => (
-														<span>
-													{category.name} {JSON.stringify(category)}
-														</span>
-													))
-												  }
-										  )
-										  }
+                            {item.categories &&
+                              "categories: " +
+                                item.categories.map((e) => e.name)}
                           </span>
                         }
                       />
